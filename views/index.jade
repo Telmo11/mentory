@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  
+  div(ng-controller="mycontroller as mc")
+
+    header-hero(ng-show)
+
+    
+    div(class"buscador" style="background: #E26A6A;padding:20px;")      
+
+      p 
+      input(ng-model="search.name", placeholder="Busca por name/tag")
+      input(ng-model="search.age")
+      select(ng-model="search.location" placeholder="location")
+       option SFO
+       option MAD
+    div(class"container")
+      card-user(data="user" ng-repeat="user in mc.users| filter: search | orderBy: 'name' : 0") 
+
+
+
