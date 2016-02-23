@@ -1,0 +1,17 @@
+<div class="card">
+
+
+
+	<h1>{{cardinfo.data.name}}</h1>
+	<img class="photo" ng-src="{{cardinfo.data.img}}">
+	<p> Tag:{{cardinfo.data.type || 'N/A'}} </p>
+	<p> Price : {{cardinfo.data.price}}</p>
+	<p> Locatión : {{cardinfo.data.location}}</p>
+	<p> Size : {{cardinfo.data.size}}</p>
+	<button ng-click="cardinfo.alert(cardinfo.data)" class"btn-primary">Llamame</button>
+	<button ng-click="cardinfo.alert(cardinfo.data)" class"btn btn-primary btn-xl page-scroll">Reservar</button>
+
+
+
+
+</div>
